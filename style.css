@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/*** utilities ***/
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.white-text {
+    color: white;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+
+/*** /utilities ***/
+
+/*** shared ***/
+
+.img-distribution {
+    width: calc(100%/2 - 5px);
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.img-distribution img {
+    width: 100%;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
+
+
+
+
+
+/*** aside ***/
+.aside {
+    width: 50px;
+    height: 100vh;
+    background-color: black;
+    z-index: 900;
+    position: fixed;
+}
+
+.aside-options :first-child {
+    filter: grayscale(1) invert(1);
+}
+
+.aside-options {
+    padding-top: 10px;
+    align-items: center;
+}
+
+.aside-options img {
+    margin-bottom: 20px;
+
+}
+
+.aside-options :not(:first-child) {
+    width: 70%;
+}
+
+/*** /aside ***/
+
+/*** header ***/
+
+header {
+    height: 100px;
+    opacity: 90%;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: 50px;
+    /* da cambiare quando allargherò l'aside */
+}
+
+header button {
+    opacity: 90%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+    padding: 10px 40px;
+    border-style: solid;
+}
+
+/*** /header ***/
+
+/*** main ***/
+main {
+    background-color: grey;
+    margin-top: 100px;
+    padding: 0px 10px;
+    margin-left: 50px;
+}
+
+main h1 {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.row1 {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.row1 a {
+    text-decoration: none;
+    color: darkgrey;
+
+}
+
+.row1>div {
+    width: calc(100% / 4);
+    line-height: 50px;
+    text-align: center;
+}
+
+.recently-played {
+    flex-wrap: wrap;
+
+
+}
+
+
+/* .recently-played>div {
+    width: calc(100%/2 - 5px);
+    text-align: center;
+    line-height: 30px;
+} */
+
+.recently-played>div>p {
+    color: darkgray;
+}
+
+.titles-margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*** footer ***/
+footer {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: #282828;
+}
