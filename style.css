@@ -30,6 +30,10 @@ img {
     color: white;
 }
 
+.grey-text {
+    color: #878787;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -40,16 +44,7 @@ img {
 
 /*** shared ***/
 
-.img-distribution {
-    width: calc(100%/2 - 5px);
-    text-align: center;
-    line-height: 30px;
-}
 
-
-.img-distribution img {
-    width: 100%;
-}
 
 .rounded-img {
     border-radius: 50%;
@@ -71,7 +66,6 @@ img {
 
 .aside-options {
     padding-top: 10px;
-    align-items: center;
 }
 
 .aside-options img {
@@ -93,6 +87,40 @@ img {
 
 .aside-text {
     display: none;
+}
+
+.playlist {
+    display: none;
+}
+
+.plus {
+    background-color: #d2d2d2;
+    height: 30px;
+
+}
+
+.plus i {
+    text-align: center;
+}
+
+.playlist h5 {
+    margin-bottom: 10px;
+}
+
+.playlist>p {
+    line-height: 40px;
+}
+
+.aside-user {
+    position: absolute;
+    top: 730px;
+    display: none;
+
+}
+
+hr {
+    width: 80%;
+    margin: 10px 5px;
 }
 
 
@@ -164,6 +192,17 @@ main h1 {
     text-align: center;
 }
 
+.img-distribution {
+    width: calc(100%/2 - 5px);
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.img-distribution img {
+    width: 100%;
+}
+
 .recently-played {
     flex-wrap: wrap;
 
@@ -200,7 +239,43 @@ footer {
     left: 0px;
     z-index: 1000;
     background-color: #282828;
+    justify-content: space-between;
+
 }
+
+
+
+.actual-song-img {
+    width: 100px;
+    padding: 20px;
+}
+
+.actual-song-info {
+    justify-content: space-evenly;
+}
+
+.actions-to-song {
+    justify-content: space-around;
+}
+
+.actions-to-song>* {
+    /* margin-right: 20px; */
+    padding: 30px;
+}
+
+.volume {
+    align-items: center;
+}
+
+.volume>* {
+    height: 25%;
+    margin-right: 10px;
+}
+
+
+
+
+
 
 @media screen and (min-width:576px) {
 
@@ -246,11 +321,34 @@ footer {
         top: 10px;
     }
 
+    .aside-user {
+        width: 100%;
+        display: block;
+    }
 
+    .user-text {
+        display: block;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+
+
+
+
+
+    /*** main ***/
 
 
     main {
         margin-left: 200px;
+    }
+
+
+    .row1>div {
+        width: calc(100% / 3);
     }
 
 
@@ -260,4 +358,59 @@ footer {
     }
 
 
+}
+
+@media screen and (min-width:768px) {
+
+    /*** main ***/
+    .row1>div {
+        width: calc(100% / 5);
+    }
+
+    .recently-played {
+        justify-content: flex-start;
+    }
+
+    .img-distribution {
+        width: calc(100% / 4 - 5px)
+    }
+
+    .recently-played :nth-child(odd) {
+        margin-right: 5px;
+    }
+
+    .recently-played :nth-child(2) {
+        margin-right: 5px;
+
+    }
+
+    .creato-per {
+        justify-content: flex-start;
+    }
+
+    .creato-per>* {
+        margin-right: 5px;
+    }
+
+    .popolari {
+        justify-content: flex-start;
+    }
+
+    .popolari>* {
+        margin-right: 5px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .row1>div {
+        width: calc(100% / 6);
+    }
+
+    .img-distribution {
+        width: calc(100% / 6 - 5px)
+    }
 }

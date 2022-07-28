@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
@@ -49,10 +52,49 @@
                     </div>
                 </div>
 
+                <div class="playlist">
+                    <h5 class="white-text">PLAYLIST</h5>
+                    <div class="aside-list flex">
+                        <div class="img-container plus flex">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="aside-text">
+                            <p class="white-text">Crea Playlist</p>
+                        </div>
+                    </div>
+                    <p class="grey-text">Nome Playlist</p>
+                    <p class="grey-text">Nome Playlist</p>
+                    <p class="grey-text">Nome Playlist</p>
+                    <p class="grey-text">Nome Playlist</p>
+                    <p class="grey-text">Nome Playlist</p>
 
-                <div class=" aside-profile flex column">
 
                 </div>
+
+                <div class="aside-user">
+                    <div class="aside-list flex">
+                        <div class="img-container">
+                            <i class="fa-solid fa-info white-text"></i>
+
+                        </div>
+                        <div class="user-text">
+                            <p class="grey-text">Installa app</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="aside-list flex">
+                        <div class="img-container">
+                            <i class="fa-solid fa-user white-text"></i>
+                        </div>
+                        <div class="user-text">
+                            <p class="white-text">John Doe</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
             </aside>
 
 
@@ -179,10 +221,61 @@
     </div>
 
     <footer class="flex">
-        <div class="actual-song" flex>
-            <div class="actual-song-img"></div>
-            <div class="actual-song-info"></div>
-            <div class="flex column"></div>
+
+        <div class="actual-song flex">
+            <div class="actual-song-img">
+                <img src="spotify/img/sinister.jpeg" alt="">
+            </div>
+            <div class="actual-song-info flex column">
+                <h5 class="white-text">Sinister</h5>
+                <p class="grey-text">Brano nome</p>
+            </div>
+            <div class="like flex"></div>
+        </div>
+
+
+
+
+        <div class=" central-actions flex column">
+            <div class="actions-to-song flex">
+                <div>
+                    <i class="fa-solid fa-shuffle white-text"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-backward-step white-text"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-play white-text"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward-step white-text"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-rotate-right white-text"></i>
+                </div>
+
+
+            </div>
+
+
+            <div class="play-rule flex"></div>
+
+
+
+
+        </div>
+
+        <div class="volume flex">
+            <div>
+                <i class="fa-solid fa-bars white-text"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop white-text"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-volume-high white-text"></i>
+            </div>
+            <div></div>
 
         </div>
     </footer>
