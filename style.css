@@ -12,6 +12,10 @@ body {
     width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 /*** utilities ***/
 
 .flex {
@@ -64,9 +68,6 @@ body {
     position: fixed;
 }
 
-.aside-options :first-child {
-    filter: grayscale(1) invert(1);
-}
 
 .aside-options {
     padding-top: 10px;
@@ -75,12 +76,31 @@ body {
 
 .aside-options img {
     margin-bottom: 20px;
-
 }
 
-.aside-options :not(:first-child) {
+.img-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    width: 80%;
+}
+
+.big-logo {
+    display: none;
+}
+
+.aside-text {
+    display: none;
+}
+
+
+/* .aside-options :not(:first-child) {
     width: 70%;
-}
+} */
+
+
 
 /*** /aside ***/
 
@@ -118,6 +138,7 @@ main {
     margin-top: 100px;
     padding: 0px 10px;
     margin-left: 50px;
+    flex-grow: 1;
 }
 
 main h1 {
@@ -165,6 +186,10 @@ main h1 {
     margin-bottom: 30px;
 }
 
+.popolari {
+    padding-bottom: 150px;
+}
+
 
 /*** footer ***/
 footer {
@@ -175,4 +200,64 @@ footer {
     left: 0px;
     z-index: 1000;
     background-color: #282828;
+}
+
+@media screen and (min-width:576px) {
+
+    header {
+        margin-left: 200px;
+    }
+
+    /** aside **/
+
+    .aside {
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .aside-options {
+        align-items: flex-start;
+    }
+
+    .img-container :first-child {
+        width: 75%;
+    }
+
+    .aside-list .img-container {
+        width: 25%;
+    }
+
+    .big-logo {
+        display: block;
+    }
+
+    .small-logo {
+        display: none;
+    }
+
+    .aside-list {
+        position: relative;
+    }
+
+    .aside-text {
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 10px;
+    }
+
+
+
+
+    main {
+        margin-left: 200px;
+    }
+
+
+
+    .img-container p {
+        display: inline;
+    }
+
+
 }
