@@ -175,9 +175,15 @@ main h1 {
     margin-bottom: 15px;
 }
 
+.row1-container {
+    width: 100%;
+    justify-content: center;
+}
+
 .row1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .row1 a {
@@ -408,6 +414,9 @@ footer {
 @media screen and (min-width:768px) {
 
     /*** main ***/
+
+    .row1-container {}
+
     .row1>div {
         width: calc(100% / 5);
     }
