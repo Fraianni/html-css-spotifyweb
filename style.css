@@ -244,32 +244,77 @@ footer {
 }
 
 
+.actual-song-container {
+    width: 25%;
+    justify-content: space-around;
+}
+
+.actual-song {
+    width: 50%;
+    justify-content: space-around;
+}
 
 .actual-song-img {
-    width: 100px;
-    padding: 20px;
+    width: 50%;
+}
+
+.central-actions {
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.volume {
+    width: 25%;
+    justify-content: flex-end;
 }
 
 .actual-song-info {
     justify-content: space-evenly;
 }
 
-.actions-to-song {
+.like {
     justify-content: space-around;
 }
 
-.actions-to-song>* {
-    /* margin-right: 20px; */
-    padding: 30px;
+
+
+.actions-to-song {
+    width: 70%;
+    justify-content: space-evenly;
 }
 
 .volume {
     align-items: center;
+    justify-content: space-between;
 }
 
 .volume>* {
     height: 25%;
     margin-right: 10px;
+    align-items: center;
+
+}
+
+.volume-section {
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+
+.play-rule {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-button {
+    border-radius: 25px;
+    width: 80%;
+    border: none;
+    background-color: #878787;
+    height: 25%;
 }
 
 
@@ -400,11 +445,21 @@ footer {
         margin-right: 5px;
     }
 
+    .like {
+        flex-direction: row;
+        align-items: center;
+        width: 25%;
+    }
+
 
 
 }
 
 @media screen and (min-width: 992px) {
+
+    .row1 {
+        width: 60%;
+    }
 
     .row1>div {
         width: calc(100% / 6);
