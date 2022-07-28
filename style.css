@@ -186,6 +186,10 @@ main h1 {
     width: 100%;
 }
 
+.row1>* {
+    padding: 0px 10px;
+}
+
 .row1 a {
     text-decoration: none;
     color: darkgrey;
@@ -193,7 +197,6 @@ main h1 {
 }
 
 .row1>div {
-    width: calc(100% / 4);
     line-height: 50px;
     text-align: center;
 }
@@ -398,9 +401,7 @@ footer {
     }
 
 
-    .row1>div {
-        width: calc(100% / 3);
-    }
+    .row1>div {}
 
 
 
@@ -417,9 +418,7 @@ footer {
 
     .row1-container {}
 
-    .row1>div {
-        width: calc(100% / 5);
-    }
+    .row1>div {}
 
     .recently-played {
         justify-content: flex-start;
@@ -470,9 +469,7 @@ footer {
         width: 60%;
     }
 
-    .row1>div {
-        width: calc(100% / 6);
-    }
+    .row1>div {}
 
     .img-distribution {
         width: calc(100% / 6 - 5px)
