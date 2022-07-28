@@ -110,6 +110,9 @@
 
 
         <main class="flex column">
+            <div class="row1-container">
+
+            </div>
 
             <div class=" flex row1">
 
@@ -222,16 +225,25 @@
 
     <footer class="flex">
 
-        <div class="actual-song flex">
-            <div class="actual-song-img">
-                <img src="spotify/img/sinister.jpeg" alt="">
+        <div class=" actual-song-container flex">
+            <div class="actual-song flex">
+                <div class="actual-song-img ">
+                    <img src="spotify/img/sinister.jpeg" alt="">
+                </div>
+                <div class="actual-song-info flex column">
+                    <h5 class="white-text">Sinister</h5>
+                    <p class="grey-text">Brano nome</p>
+                </div>
+
             </div>
-            <div class="actual-song-info flex column">
-                <h5 class="white-text">Sinister</h5>
-                <p class="grey-text">Brano nome</p>
+
+            <div class="like flex column">
+                <i class="fa-solid fa-heart white-text"></i>
+                <i class="fa-solid fa-folder white-text"></i>
             </div>
-            <div class="like flex"></div>
         </div>
+
+
 
 
 
@@ -258,7 +270,11 @@
             </div>
 
 
-            <div class="play-rule flex"></div>
+            <div class="play-rule flex">
+                <p class="white-text">0:25</p>
+                <button class="song-button"></button>
+                <p class="white-text">4:35</p>
+            </div>
 
 
 
@@ -266,16 +282,18 @@
         </div>
 
         <div class="volume flex">
-            <div>
+            <div class="flex">
                 <i class="fa-solid fa-bars white-text"></i>
             </div>
-            <div>
+            <div class="flex">
                 <i class="fa-solid fa-desktop white-text"></i>
             </div>
-            <div>
+            <div class="flex volume-section ">
                 <i class="fa-solid fa-volume-high white-text"></i>
+                <button class="song-button"></button>
+
             </div>
-            <div></div>
+
 
         </div>
     </footer>
