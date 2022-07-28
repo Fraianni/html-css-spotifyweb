@@ -84,7 +84,7 @@ img {
 }
 
 .img-container {
-    width: 80%;
+    padding: 0px 5px;
 }
 
 .big-logo {
