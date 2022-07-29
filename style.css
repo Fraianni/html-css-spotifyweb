@@ -63,6 +63,15 @@ img {
     position: fixed;
 }
 
+.aside a {
+    text-decoration: none;
+    color: #d2d2d2;
+}
+
+.aside a:hover {
+    color: white;
+}
+
 
 .aside-options {
     padding-top: 10px;
@@ -156,6 +165,11 @@ header button {
     border-color: white;
     padding: 10px 40px;
     border-style: solid;
+    margin-right: 15px;
+}
+
+header button:hover {
+    transform: scale(1.1);
 }
 
 /*** /header ***/
@@ -196,6 +210,10 @@ main h1 {
 
 }
 
+.row1 a:hover {
+    color: white;
+}
+
 .row1>div {
     line-height: 50px;
     text-align: center;
@@ -205,11 +223,32 @@ main h1 {
     width: calc(100%/2 - 5px);
     text-align: center;
     line-height: 30px;
+
 }
 
 
 .img-distribution img {
     width: 100%;
+}
+
+.hover-img {
+    position: relative;
+}
+
+.hover-img i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -80%);
+    display: none;
+}
+
+.hover-img:hover i {
+    display: block;
+}
+
+.hover-img:hover img {
+    filter: opacity(0.5);
 }
 
 .recently-played {
@@ -254,7 +293,7 @@ footer {
 
 
 .actual-song-container {
-    width: 25%;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -265,16 +304,17 @@ footer {
 
 .actual-song-img {
     width: 50%;
+    align-items: center;
 }
 
 .central-actions {
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
     align-items: center;
 }
 
 .volume {
-    width: 25%;
+    width: 30%;
     justify-content: flex-end;
 }
 
@@ -324,6 +364,21 @@ footer {
     border: none;
     background-color: #878787;
     height: 25%;
+}
+
+
+/*** footer effects ***/
+
+.actual-song-info p:hover {
+    color: white;
+}
+
+.like i:hover {
+    color: white;
+}
+
+.actions-to-song .fa-play:hover {
+    transform: scale(1.5);
 }
 
 
